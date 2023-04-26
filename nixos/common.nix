@@ -9,7 +9,7 @@ let
 
   cfg = config.home-manager;
 
-  extendedLib = import ../modules/lib/stdlib-extended.nix lib;
+  extendedLib = import ../modules/lib/stdlib-extended.nix pkgs.lib;
 
   hmModule = types.submoduleWith {
     description = "Home Manager module";
